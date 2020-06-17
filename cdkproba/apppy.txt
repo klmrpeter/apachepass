@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+from aws_cdk import core
+
+from proba.proba_stack import ProbaStack
+
+
+app = core.App()
+ProbaStack(app, "ProbaStack")
+
+app.synth()
